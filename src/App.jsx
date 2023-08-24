@@ -12,6 +12,8 @@ import Contact from './components/Contact';
 import Voitures from './components/Voitures';
 import Header from './components/Header';
 import { Blog } from './components/blog';
+import NewProfilPage from './components/ProfilPageNew';
+import BlogPage from './components/blog';
 
 import './css/App.css';
 import ProfilePage from './components/ProfilePage';
@@ -28,8 +30,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/voitures" element={<Voitures />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/profil" element={<ProfilePage/>}/>
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path='/profil' element= {<NewProfilPage/>}/>
       </Routes>
     </Router>
   );

@@ -1,63 +1,71 @@
-    /* Styles for the blog title */
-  h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
+/* Styles de base pour le blog */
+.blog {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ff8800;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   
-  /* Styles for the blog paragraphs */
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Styles for the link */
-  .NavLink {
-    display: inline-block;
-    background-color: rgb(250, 133, 0);
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .NavLink:hover {
-    background-color: rgb(247, 144, 0);
-    max-width: 600px;
-    margin:  auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    margin-left: 10;
-  }
-  .nav-link {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    padding: 1rem 2rem;
-    margin-top: 1.25rem;
-    background-color: #f0831c;
-    color: #333;
-    font-weight: bold;
-    border-radius: 9999px;
-    
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
+}
+.blog-content strong {
+  color: orange; /* Changez la couleur selon votre préférence */
+}
+.blog h2 {
+  text-align: center;
+  color: darkorange;
+}
+.blog h1 {
+  text-align: center;
+}
+/* Styles pour les articles de blog */
+.blog-post {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.blog-post h2 {
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  margin-bottom: 5px;
+}
+
+.blog-post p:last-child {
+  margin-bottom: 0;
+}
+
+/* Boutons */
+.conf,
+.password-button,
+.logout-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/* Messages d'erreur et de réussite */
+.success-message {
+  color: green;
+  margin: 5px 0;
+}
+
+.error-message {
+  color: red;
+  margin: 5px 0;
+}
+
+.password-error {
+  color: red;
+  margin: 5px 0;
+}

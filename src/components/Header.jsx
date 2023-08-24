@@ -34,7 +34,7 @@ function Header() {
           <Link to="/">
             <img src={vago} alt="Logo" />
           </Link>
-          <h1>Rent Your Ride</h1>
+          <h1>LoueTaCaisse</h1>
         </div>
         <div className="auth-buttons">
           {isUserLoggedIn ? ( // Étape 4 : Utilisez une condition pour afficher les boutons appropriés

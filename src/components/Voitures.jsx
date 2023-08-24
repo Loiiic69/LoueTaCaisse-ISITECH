@@ -1,50 +1,49 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import '../css/Voitures.css'; // Assurez-vous d'importer correctement votre fichier CSS
 import { optionsSportives, optionsUtilitaires, optionsCitadines } from './optionsData';
 
 const Voitures = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [slides, setSlides] = useState([]);
+  const [carOptions] = useState([...optionsSportives, ...optionsUtilitaires, ...optionsCitadines]);
+  const [selectedCar, setSelectedCar] = useState(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide(currentSlide => (currentSlide + 1) % slides.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
-  const handlePrevSlide = () => {
-    setCurrentSlide(currentSlide => (currentSlide - 1 + slides.length) % slides.length);
+  const handleCarClick = (car) => {
+    setSelectedCar(car);
   };
 
-  const handleNextSlide = () => {
-    setCurrentSlide(currentSlide => (currentSlide + 1) % slides.length);
+  const handleCloseClick = () => {
+    setSelectedCar(null);
   };
-
-  useEffect(() => {
-    // Combining all options into a single array for the carousel
-    setSlides([...optionsSportives, ...optionsUtilitaires, ...optionsCitadines]);
-  }, []);
 
   return (
-    <div>
+    <div className="voitures-page">
       <h1>Voitures</h1>
-
-      <div>
-        <h2>Véhicules sportifs</h2>
-        <div className="carousel-container">
-          <button className="carousel-button prev-button" onClick={handlePrevSlide}>&#8249;</button>
-          <div className="carousel">
-            {slides.map((slide, index) => (
-              <div key={slide.value} className={`carousel-item ${index === currentSlide ? 'active' : ''}`}>
-                <img src={slide.image} alt={slide.label} />
-                <p>{slide.label}</p>
+      <div className="carousel-container">
+        <div className="carousel">
+          <div className="carousel-slide">
+            {carOptions.map((car) => (
+              <div
+                key={car.value}
+                className={`carousel-item ${selectedCar === car ? 'active' : ''}`}
+                onClick={() => handleCarClick(car)}
+              >
+                <img src={car.image} alt={car.label} />
               </div>
             ))}
           </div>
-          <button className="carousel-button next-button" onClick={handleNextSlide}>&#8250;</button>
         </div>
       </div>
+      {selectedCar && (
+        <div className="car-details">
+          <div className="car-details-content">
+            <h2>{selectedCar.label}</h2>
+            <p>Année : {selectedCar.year}</p>
+            <p>Type : {selectedCar.type}</p>
+            <button onClick={handleCloseClick}>Fermer</button>
+            <br /><br />
+            <button>Louez-là !</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

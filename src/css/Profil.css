@@ -1,0 +1,80 @@
+/* Profil.css */
+
+.profil-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-image: url('');
+  background-size: cover; /* Ajustez la taille de l'image pour couvrir l'arrière-plan */
+  background-position: center; /* Centrez l'image sur l'arrière-plan */
+  background-repeat: no-repeat; /* Évitez la répétition de l'image */
+  }
+  
+  .welcome-message {
+    margin-bottom: 20px;
+  }
+  
+  .conf,
+  .password-button,
+  .logout-button {
+    background-color:orange;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Utilise la hauteur de la vue pour centrer verticalement */
+}
+
+.password-change-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ff8800;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Ajustez la largeur selon vos besoins */
+  text-align: center;
+  margin-top: 20px; /* Espace entre le contenu précédent et le formulaire */
+}
+  .password-change {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  .password-change h3 {
+    margin-top: 0;
+  }
+  
+  .password-change input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .password-error {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .profil-page {
+      padding: 10px;
+    }
+  }
+  
