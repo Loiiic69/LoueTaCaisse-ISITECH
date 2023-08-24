@@ -1,0 +1,80 @@
+/* Contact.css */
+
+/* Style général de la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style de la barre de navigation */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  /* Style de la section de contenu */
+  .page-content {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+  }
+  
+  .contact-section {
+    margin-bottom: 40px;
+    border: 2px solid orange;
+    padding: 20px;
+  }
+  
+  .contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .contact-phone {
+    font-weight: bold;
+    color: #f58220;
+  }
+  
+  .contact-info {
+    font-size: 14px;
+  }
+  
+  .contact-text a,
+  .contact-info a {
+    color: #f58220;
+    text-decoration: none;
+  }
+  
+  .contact-text a:hover,
+  .contact-info a:hover {
+    text-decoration: underline;
+  }

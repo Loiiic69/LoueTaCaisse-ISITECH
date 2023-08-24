@@ -1,0 +1,52 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.logo-name img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  background-color: #fff;
+  color: orange;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.auth-buttons button.active {
+  background-color: orange;
+  color: #fff;
+}
+
+.auth-buttons button:hover:not(.active) {
+  background-color: orange;
+  color: #fff;
+}
+
+.home {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #fff;
+}
+
+.head { /* ou position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
