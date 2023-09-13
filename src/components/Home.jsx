@@ -1,8 +1,9 @@
 import React from 'react';
 import '../css/Home.css';
-import voitureCitadines from '../img/voiture-citadines.png';
-import utilitaires from '../img/utilitaires.png';
+import voitureCitadines from '../img/voiture-citadines.jpg';
+import utilitaires from '../img/utilitaires.jpg';
 import sportives from '../img/sportives.png';
+
 
 function Home() {
   return (
@@ -27,11 +28,11 @@ function Home() {
           <div className="message-container">
             <div className="message-left">
               <h2>+250 Véhicules disponibles</h2>
-              <p>Lorem ipsum dolor sit amet concecteur adipiscing exit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing exit.</p>
             </div>
             <div className="message-right">
               <h2>+250 Véhicules disponibles</h2>
-              <p>Lorem ipsum dolor sit amet concecteur adipiscing exit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing exit.</p>
             </div>
           </div>
         </div>
@@ -41,21 +42,22 @@ function Home() {
           <h2>Quel type de véhicules?</h2>
         </div>
         <div className="bottom-right-rectangle">
-          <div className="vehicle-type">
-            <img src={voitureCitadines} />
-            <h2>La location citadines</h2>
-            <p>Prenez vos rêves pour des réalités, louez une belle voiture pour un mois et plus.</p>
-          </div>
-          <div className="vehicle-type">
-            <img src={utilitaires}/>
-            <h2>Nos solutions utilitaires</h2>
-            <p>Du 3m3 au 20m3, choisissez celui qui vous correspond le plus.</p>
-          </div>
-          <div className="vehicle-type">
-            <img src={sportives}/>
-            <h2>La location SPORTIVES</h2>
-            <p>Prenez vos rêves pour des réalités, louez une voiture sportive pour quelque jours ou plus.</p>
-          </div>
+
+              <div className="vehicle-type">
+                <img src={voitureCitadines} alt="Voiture Citadines" />
+                <h2>La location citadines</h2>
+                <p>Prenez vos rêves pour des réalités, louez une belle voiture pour un mois et plus.</p>
+              </div>
+              <div className="vehicle-type">
+                <img src={utilitaires} alt="Utilitaires" />
+                <h2>Nos utilitaires</h2>
+                <p>Du 3m3 au 20m3, choisissez celui qui vous correspond le plus.</p>
+              </div>
+              <div className="vehicle-type">
+                <img src={sportives} alt="Sportives" />
+                <h2>La location SPORTIVES</h2>
+                <p>Prenez vos rêves pour des réalités, louez une voiture sportive pour quelques jours ou plus.</p>
+              </div>
         </div>
       </div>
     </div>

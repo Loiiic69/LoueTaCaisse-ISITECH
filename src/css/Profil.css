@@ -1,14 +1,12 @@
-/* Profil.css */
-
 .profil-page {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
     background-image: url('');
-  background-size: cover; /* Ajustez la taille de l'image pour couvrir l'arrière-plan */
-  background-position: center; /* Centrez l'image sur l'arrière-plan */
-  background-repeat: no-repeat; /* Évitez la répétition de l'image */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
   }
   
   .welcome-message {
@@ -34,7 +32,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Utilise la hauteur de la vue pour centrer verticalement */
+  height: 100vh;
 }
 
 .password-change-container {
@@ -43,9 +41,9 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Ajustez la largeur selon vos besoins */
+  width: 300px; 
   text-align: center;
-  margin-top: 20px; /* Espace entre le contenu précédent et le formulaire */
+  margin-top: 20px;
 }
   .password-change {
     border: 1px solid #ffffff;
@@ -77,4 +75,10 @@
       padding: 10px;
     }
   }
-  
+  @media (max-width: 768px) {
+    .profile-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

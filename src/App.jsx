@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import firebase from './components/firebase'; // Le chemin doit être correct pour le fichier firebase.js dans src/
 import 'firebase/auth';
+import 'firebase/compat/database'
 
 
 import Home from './components/Home';
@@ -14,9 +15,10 @@ import Header from './components/Header';
 import { Blog } from './components/blog';
 import NewProfilPage from './components/ProfilPageNew';
 import BlogPage from './components/blog';
+import VehiclesList from './components/VehiclesList';
+import Footer from './components/footer';
 
 import './css/App.css';
-import ProfilePage from './components/ProfilePage';
 
 function App() {
   return (
@@ -32,7 +34,10 @@ function App() {
         <Route path="/voitures" element={<Voitures />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path='/profil' element= {<NewProfilPage/>}/>
+        <Route path='vehicleslist' element= {<VehiclesList/>}/>
       </Routes>
+      <Footer/>
+
     </Router>
   );
 }

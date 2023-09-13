@@ -137,12 +137,64 @@ box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 
 .login-page {
   flex: 1;
-  /* Ajoutez les styles supplémentaires souhaités pour le contenu de la page de connexion */
 }
 
 .navbar {
-  position: fixed; /* ou position: absolute; */
+  position: fixed; 
   top: 0;
   left: 0;
-  z-index: 9999; /* Valeur du z-index pour rester au-dessus des autres éléments */
+  z-index: 9999; 
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%; 
+    padding: 20px;
+  }
+
+  .login-form h2 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+  }
+
+  .login-form label {
+    font-size: 16px; 
+    margin-bottom: 8px; 
+  }
+
+  .login-form-input {
+    height: 30px;
+    font-size: 14px; 
+    margin-bottom: 10px;
+  }
+
+  .login-form button {
+    height: 35px; 
+    font-size: 14px; 
+    margin-top: 5px;
+    margin-bottom: 5px; 
+  }
+
+  .remember-me-label {
+    margin-top: 5px; 
+  }
+
+  .clique-ici {
+    font-size: 12px;
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+  }
+
+  .remember-me-container {
+    margin-bottom: 5px; 
+  }
+
+  .join-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .login-page-container img {
+    display: none; 
+  }
 }

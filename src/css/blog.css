@@ -10,7 +10,7 @@
   
 }
 .blog-content strong {
-  color: orange; /* Changez la couleur selon votre préférence */
+  color: orange; 
 }
 .blog h2 {
   text-align: center;
@@ -39,33 +39,4 @@
   margin-bottom: 0;
 }
 
-/* Boutons */
-.conf,
-.password-button,
-.logout-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 5px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
 
-/* Messages d'erreur et de réussite */
-.success-message {
-  color: green;
-  margin: 5px 0;
-}
-
-.error-message {
-  color: red;
-  margin: 5px 0;
-}
-
-.password-error {
-  color: red;
-  margin: 5px 0;
-}

@@ -1,19 +1,9 @@
-/* Contact.css */
-
 /* Style général de la page */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  /* Style de la barre de navigation */
-  .navbar {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    margin-bottom: 50px;
   }
   
   .navbar-brand {

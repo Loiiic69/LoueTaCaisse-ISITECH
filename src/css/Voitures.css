@@ -1,30 +1,25 @@
-/* Voitures.css */
 
-/* Styles pour la page entière */
 .voitures-page {
   text-align: center;
-  background-size: cover; /* Ajustez la taille de l'image pour couvrir l'arrière-plan */
-  background-position: center; /* Centrez l'image sur l'arrière-plan */
-  background-repeat: no-repeat; /* Évitez la répétition de l'image */
-  color: white; /* Couleur du texte en contraste avec l'image */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white; 
   padding: 20px;
 }
 
-/* Styles pour le conteneur du carousel */
 .carousel-container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-/* Styles pour les éléments du carousel */
 .carousel-slide {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-/* Styles pour chaque item du carousel */
 .carousel-item {
   flex: 0 0 calc(33.33% - 20px);
   position: relative;
@@ -46,7 +41,6 @@
   filter: brightness(50%);
 }
 
-/* Styles pour les détails de la voiture sélectionnée */
 .car-details {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;

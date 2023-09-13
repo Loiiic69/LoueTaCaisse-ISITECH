@@ -79,27 +79,26 @@
 
 .login-page {
   flex: 1;
-  /* Ajoutez les styles supplémentaires souhaités pour le contenu de la page de connexion */
 }
 
 .navbar {
-  position: fixed; /* ou position: absolute; */
+  position: fixed; 
   top: 0;
   left: 0;
-  z-index: 9999; /* Valeur du z-index pour rester au-dessus des autres éléments */
+  z-index: 9999; 
 }
-/* CSS pour la popup */
+
 .popup {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* Assurez-vous que la popup s'affiche au-dessus de tout le reste */
+  z-index: 999; 
 }
 
 .popup-content {
@@ -118,7 +117,6 @@
   cursor: pointer;
 }
 
-/* Pour cacher la scrollbar quand la popup est ouverte */
 .error-message {
   color: red;
   width: 100%;
