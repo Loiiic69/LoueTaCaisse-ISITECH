@@ -7,7 +7,7 @@ const firebaseConfig = {
   // Votre configuration Firebase ici
   apiKey: "AIzaSyATgToZFSp-TEtlo1PVGAHY69zcx-WmdvM",
   authDomain: "louetacaisse-7b4b9.firebaseapp.com",
-  databaseURL:"louetacaisse-7b4b9-default-rtdb.europe-west1.firebasedatabase.app",
+  databaseURL: "https://louetacaisse-7b4b9-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "louetacaisse-7b4b9",
   storageBucket: "louetacaisse-7b4b9.appspot.com",
   messagingSenderId: "651821711871",

@@ -1,0 +1,42 @@
+/* Styles pour le composant AfficherVehicules.jsx */
+.afficher-vehicules-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .vehicule {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .vehicule img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .vehicule h2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .vehicule p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  /* Styles pour les médias queries pour une mise en page responsive */
+  @media (max-width: 768px) {
+    .vehicule {
+      flex-direction: column;
+    }
+  }
+  

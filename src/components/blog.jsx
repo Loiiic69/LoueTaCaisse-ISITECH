@@ -45,7 +45,6 @@ function BlogPage() {
       date: '24 août 2023'
     },
    
-    // Ajoutez plus d'articles ici
   ];
 
   return (

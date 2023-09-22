@@ -17,6 +17,8 @@ import NewProfilPage from './components/ProfilPageNew';
 import BlogPage from './components/blog';
 import VehiclesList from './components/VehiclesList';
 import Footer from './components/footer';
+import AfficherVehicules from './components/afficher-vehicules';
+
 
 import './css/App.css';
 
@@ -35,6 +37,8 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path='/profil' element= {<NewProfilPage/>}/>
         <Route path='vehicleslist' element= {<VehiclesList/>}/>
+        <Route path='/afficher-vehicules' element={<AfficherVehicules />} />
+
       </Routes>
       <Footer/>
 
