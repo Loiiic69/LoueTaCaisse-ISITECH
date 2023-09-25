@@ -4,7 +4,7 @@ import '../css/Home.css';
 import voitureCitadines from '../img/voiture-citadines.jpg';
 import utilitaires from '../img/utilitaires.jpg';
 import sportives from '../img/sportives.png';
-import firebase from './firebase'; 
+import firebase from './firebase';
 
 function Home() {
   const [location, setLocation] = useState('');
@@ -31,14 +31,15 @@ function Home() {
     <div className="home">
       <div className="top-rectangle">
         <div className="top-left-rectangle">
-          <h2>Trouver un véhicule</h2>
+          <h2>Explorez notre gamme de véhicules</h2>
           <form className='car-form' onSubmit={handleSubmit}>
-            <p>Vous trouverez nos véhicules</p>
-            <button type="submit">Voir les véhicules</button>
+            <p>Découvrez une sélection exceptionnelle de véhicules pour tous vos besoins</p>
+            <button type="submit">Voir nos véhicules</button>
           </form>
         </div>
         <div className="top-right-rectangle">
-          <div className="vehicle-list">
+          <div className="text">
+            <span>Explorez notre univers de véhicules et laissez vos rêves prendre le volant ! 🚀</span>
           </div>
         </div>
       </div>
