@@ -10,14 +10,11 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import Contact from './components/Contact';
-import Voitures from './components/Voitures';
 import Header from './components/Header';
-import { Blog } from './components/blog';
 import NewProfilPage from './components/ProfilPageNew';
 import BlogPage from './components/blog';
 import VehiclesList from './components/VehiclesList';
 import Footer from './components/footer';
-import AfficherVehicules from './components/afficher-vehicules';
 
 
 import './css/App.css';
@@ -33,11 +30,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/voitures" element={<Voitures />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path='/profil' element= {<NewProfilPage/>}/>
         <Route path='vehicleslist' element= {<VehiclesList/>}/>
-        <Route path='/afficher-vehicules' element={<AfficherVehicules />} />
 
       </Routes>
       <Footer/>

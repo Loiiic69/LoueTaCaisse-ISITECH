@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import firebase from './firebase';
-import '../css/Profil.css'; // Assurez-vous d'importer correctement votre fichier CSS
+import '../css/Profil.css'; 
 
 const NewProfilPage = () => {
   const [user, setUser] = useState(null);
@@ -41,7 +41,6 @@ const NewProfilPage = () => {
     } else {
       setPasswordError(false);
 
-      // Mettre à jour le mot de passe dans la base de données Firebase
       const userCredential = firebase.auth.EmailAuthProvider.credential(
         user.email,
         oldPassword
@@ -61,7 +60,7 @@ const NewProfilPage = () => {
         })
         .catch((error) => {
           console.error('Erreur lors de la mise à jour du mot de passe:', error);
-          setPasswordMismatchError(true); // Afficher un message d'erreur pour un ancien mot de passe incorrect
+          setPasswordMismatchError(true); 
         });
     }
   };
@@ -78,7 +77,7 @@ const NewProfilPage = () => {
     <div className="profile-container">
       {user ? (
         <div className="profile-content">
-          <h1>Bienvenue, {user.displayName}!</h1>
+          <h1>Bienvenue {user.displayName}!</h1>
           <p>Email: {user.email}</p>
 
           <div className="password-change-container">

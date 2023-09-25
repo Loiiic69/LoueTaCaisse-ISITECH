@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../css/blog.css'; // Importez votre fichier CSS
+import '../css/blog.css'; 
 
 function BlogPost(props) {
   return (

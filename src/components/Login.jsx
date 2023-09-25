@@ -64,7 +64,7 @@ function LoginPage() {
     };
 
     const handleCloseSuccessMessage = () => {
-        setResetSuccessMessage(""); // Cette fonction sera appelée pour fermer la boîte de dialogue de succès
+        setResetSuccessMessage("");
     };
 
     return (

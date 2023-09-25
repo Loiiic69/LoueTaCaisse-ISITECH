@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import firebase from './firebase';
 import 'firebase/compat/database';
 
-import '../css/VehiclesList.css'; // Ajoutez le fichier CSS pour les styles
+import '../css/VehiclesList.css'; // Assurez-vous d'ajouter le fichier CSS pour les styles
 
 function VehiclesList() {
   const [vehicleData, setVehicleData] = useState({});
@@ -27,13 +27,11 @@ function VehiclesList() {
 
   useEffect(() => {
     if (selectedCity !== '') {
-      // Filtrer les véhicules en fonction de la ville sélectionnée
       const filtered = Object.keys(vehicleData).filter((key) => {
         return vehicleData[key].location === selectedCity;
       });
       setFilteredVehicles(filtered);
     } else {
-      // Si aucune ville n'est sélectionnée, afficher tous les véhicules
       setFilteredVehicles(Object.keys(vehicleData));
     }
   }, [selectedCity, vehicleData]);
@@ -49,11 +47,9 @@ function VehiclesList() {
         <label htmlFor="city">Sélectionnez une ville :</label>
         <select id="city" onChange={handleCityChange}>
           <option value="">Toutes les villes</option>
+          <option value="Lyon">Lyon</option>
           <option value="Paris">Paris</option>
-          <option value="AutreVille">Lyon</option>
-          <option value="AutreVille">Marseille</option>
-
-          {/* Ajoutez d'autres options de ville au besoin */}
+          <option value="Marseille">Marseille</option>
         </select>
       </div>
       {loading ? (
@@ -63,8 +59,32 @@ function VehiclesList() {
           {filteredVehicles.map((key) => (
             <li key={key} className="vehicle-li">
               <h3>{vehicleData[key].label}</h3>
-              <p>Type: {vehicleData[key].type}</p>
-              <p>Prix: {vehicleData[key].price}</p>
+              <div className='info'>
+                <div className='one'>
+                <p>Type: {vehicleData[key].type}</p>
+                <p>Prix: {vehicleData[key].price}€ / jours</p>
+                <p>Ville: {vehicleData[key].location}</p>
+                </div>
+                <div className='two'>
+              
+                <div className="phone-info">
+                  <img
+                    src="https://www.icone-png.com/png/6/5532.png" 
+                    alt="Téléphone"
+                    className="phone-icon"
+                  />
+                  <p className="phone-number">07 99 99 99 99</p>
+                </div>
+                <div className="phone-info">
+                  <img
+                    src="https://www.icone-png.com/png/10/10073.png" // Ajoutez l'URL de votre icône de téléphone
+                    alt="Téléphone"
+                    className="phone-icon"
+                  />
+                  <p className="phone-number">Ou par mail : reservation@louetacaisse.fr</p>
+                </div>
+                </div>
+              </div>
               <img
                 src={vehicleData[key].image}
                 alt={vehicleData[key].label}

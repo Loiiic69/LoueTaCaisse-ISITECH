@@ -1,18 +1,15 @@
-/* Ajoutez la classe .container ou le sélecteur du conteneur principal */
-/* Ajoutez la classe .container ou le sélecteur du conteneur principal */
 
-/* Votre CSS existant ci-dessous */
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centrer horizontalement les éléments */
+  justify-content: center;
   overflow-x: hidden;
 }
 
 .logo-name {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centrer horizontalement les éléments */
+  justify-content: center; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -21,15 +18,14 @@
   font-size: 28px;
   text-align: center;
   margin: 0;
-  margin-right: 10px; /* Réduisez la marge à droite du texte */
+  margin-right: 10px; 
 }
 
 .logo-name img {
   height: 40px;
-  margin-left: 350px; /* Réduisez la marge à gauche de l'image */
+  margin-left: 350px; 
 }
 
-/* Les autres styles restent inchangés */
 
 .auth-buttons button {
   margin-left: 10px;
@@ -84,8 +80,6 @@
 
 
 
-
-/* Styles pour les écrans plus petits (appareils mobiles) */
 @media (max-width: 768px) {
   .main-nav {
     flex-direction: column;

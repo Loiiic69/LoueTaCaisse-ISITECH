@@ -4,7 +4,6 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/database'
 
 const firebaseConfig = {
-  // Votre configuration Firebase ici
   apiKey: "AIzaSyATgToZFSp-TEtlo1PVGAHY69zcx-WmdvM",
   authDomain: "louetacaisse-7b4b9.firebaseapp.com",
   databaseURL: "https://louetacaisse-7b4b9-default-rtdb.europe-west1.firebasedatabase.app",

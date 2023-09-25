@@ -4,20 +4,26 @@ import '../css/Home.css';
 import voitureCitadines from '../img/voiture-citadines.jpg';
 import utilitaires from '../img/utilitaires.jpg';
 import sportives from '../img/sportives.png';
+import firebase from './firebase'; 
 
 function Home() {
   const [location, setLocation] = useState('');
   const [departureDate, setDepartureDate] = useState('');
   const [returnDate, setReturnDate] = useState('');
-
-  const navigate = useNavigate(); // Initialisez useNavigate pour gérer la redirection
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Redirigez l'utilisateur vers la page "AfficherVehicules" avec les données du formulaire.
-    navigate('/vehicleslist', {
-      state: { location, departureDate, returnDate },
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        navigate('/vehicleslist', {
+          state: { location, departureDate, returnDate },
+        });
+      } else {
+        alert("Vous devez être connecté pour voir les véhicules.");
+        navigate('/login');
+      }
     });
   };
 
@@ -32,9 +38,7 @@ function Home() {
           </form>
         </div>
         <div className="top-right-rectangle">
-          {/* Affichage de véhicules ici */}
           <div className="vehicle-list">
-            {/* Vos véhicules seront affichés ici */}
           </div>
         </div>
       </div>
