@@ -104,13 +104,13 @@
 
   }
   .logo-name img {
-    margin-left: -5px;
+    margin-left: 20px;
   }
   .auth-buttons{
     margin-left: -50px;
     margin-right: -10px;
   }
   .auth-buttons button {
-    margin-left: 10px;
+    margin-left: 30px;
   }
 }
