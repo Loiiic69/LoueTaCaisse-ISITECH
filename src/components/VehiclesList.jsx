@@ -89,7 +89,7 @@ function VehiclesList() {
               <div className='info'>
                 <div className='one'>
                   <p>Type: {vehicleData[key].type}</p>
-                  <p>Prix: {vehicleData[key].price}€ / jours</p>
+                  <p>Prix: {vehicleData[key].price} € / jours</p>
                   <p>Ville: {vehicleData[key].location}</p>
                 </div>
                 <div className='two'>
