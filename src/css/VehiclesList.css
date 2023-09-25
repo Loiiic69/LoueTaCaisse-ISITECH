@@ -1,16 +1,62 @@
-.vehicle-image {
-    width: 150px; /* Modifiez cette valeur selon vos besoins */
-    height: auto; /* Pour conserver les proportions de l'image */
+/* VehiclesList.css */
+
+.vehicle-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Styles pour la liste */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .city-selector {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
   .vehicle-ul {
     list-style: none;
     padding: 0;
   }
   
   .vehicle-li {
-    margin-bottom: 20px; /* Espacement entre les éléments de la liste */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
   
-  /* Autres styles personnalisés selon vos besoins */
+  .vehicle-li h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .vehicle-li p {
+    margin: 10px 0;
+  }
+  
+  .vehicle-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  

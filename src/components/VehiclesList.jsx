@@ -50,7 +50,9 @@ function VehiclesList() {
         <select id="city" onChange={handleCityChange}>
           <option value="">Toutes les villes</option>
           <option value="Paris">Paris</option>
-          <option value="AutreVille">AutreVille</option>
+          <option value="AutreVille">Lyon</option>
+          <option value="AutreVille">Marseille</option>
+
           {/* Ajoutez d'autres options de ville au besoin */}
         </select>
       </div>

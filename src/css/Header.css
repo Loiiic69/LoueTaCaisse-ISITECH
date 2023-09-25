@@ -101,11 +101,16 @@
   .logo-name h1 {
     font-size: 24px;
     margin: 10px 0;
-      margin-left: -300px;
-      margin-bottom: 10px;
+
   }
   .logo-name img {
-    margin-left: -600px;
-    margin-right: 30px;
+    margin-left: -5px;
+  }
+  .auth-buttons{
+    margin-left: -50px;
+    margin-right: -10px;
+  }
+  .auth-buttons button {
+    margin-left: 10px;
   }
 }
