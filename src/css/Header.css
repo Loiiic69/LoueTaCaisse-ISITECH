@@ -35,10 +35,12 @@
   margin-left: 10px;
   background-color: #fff;
   color: orange;
-  border: none;
   cursor: pointer;
   padding: 10px 20px;
   font-size: 16px;
+  border-color: orange;
+  border-radius: 5px;
+  margin-left: 50px;
 }
 
 .auth-buttons button.active {

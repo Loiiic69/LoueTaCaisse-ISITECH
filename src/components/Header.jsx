@@ -28,7 +28,12 @@ function Header() {
         </div>
         <div className="auth-buttons">
           {isUserLoggedIn ? (
-            <button onClick={() => firebase.auth().signOut()}>Se déconnecter</button>
+            <>
+              <button onClick={() => firebase.auth().signOut()}>Se déconnecter</button>
+              <button onClick={() => { window.location.href = '/profil'; }}>
+  Profil
+</button>
+  </>
           ) : (
             <>
               <Link to="/login">
