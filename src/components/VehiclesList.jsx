@@ -88,9 +88,9 @@ function VehiclesList() {
               <h3>{vehicleData[key].label}</h3>
               <div className='info'>
                 <div className='one'>
-                  <p>Type: {vehicleData[key].type}</p>
-                  <p>Prix: {vehicleData[key].price} € / jours</p>
-                  <p>Ville: {vehicleData[key].location}</p>
+                  <p>Type : {vehicleData[key].type}</p>
+                  <p>Prix : {vehicleData[key].price} € / jour</p>
+                  <p>Ville : {vehicleData[key].location}</p>
                 </div>
                 <div className='two'>
                   <div className="phone-info">
