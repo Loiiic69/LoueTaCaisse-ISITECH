@@ -98,7 +98,10 @@ select {
 }
 
 .image-modal img {
-  max-width: 90%; /* Réduire la taille de l'image agrandie à 90% de la largeur de la fenêtre /
-  max-height: 90vh; / Limiter la hauteur de l'image agrandie à 90% de la hauteur de la fenêtre */
+  max-width: 90%; 
   object-fit: contain;
+}
+.phone-link {
+  text-decoration: none;
+  color: orange;
 }
