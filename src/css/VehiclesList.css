@@ -1,0 +1,16 @@
+.vehicle-image {
+    width: 150px; /* Modifiez cette valeur selon vos besoins */
+    height: auto; /* Pour conserver les proportions de l'image */
+  }
+  
+  /* Styles pour la liste */
+  .vehicle-ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .vehicle-li {
+    margin-bottom: 20px; /* Espacement entre les éléments de la liste */
+  }
+  
+  /* Autres styles personnalisés selon vos besoins */

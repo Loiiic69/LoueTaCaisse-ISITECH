@@ -40,7 +40,7 @@ function Header() {
                 <button>Se connecter</button>
               </Link>
               <Link to="/register">
-                <button className="join-button active">↗️ REJOINDRE</button>
+                <button className="join-button active">REJOINDRE</button>
               </Link>
             </>
           )}
