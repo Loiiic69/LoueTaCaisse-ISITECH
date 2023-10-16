@@ -11,7 +11,6 @@
   flex: 1;
   flex-direction: column;
   width: 100%;
-  background-color: blue;
   background-image: url('https://print.marcdaviet.com/wp-content/uploads/2021/08/Paysage-montagne.jpg');
 }
 
@@ -56,6 +55,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+.bottom-right-rectangle h2 {
+  color: rgb(0, 0, 0);
+}
+
+.bottom-left-rectangle h2 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
 }
 
 .vehicle-type {
@@ -142,5 +149,17 @@ button[type="submit"] {
   .vehicle-type img {
     width: 100%;
     margin-right: 0;
+  }
+}
+/* Pour les écrans de grande taille */
+@media (min-width: 769px) {
+  .bottom-right-rectangle {
+    justify-content: space-between;
+  }
+
+  .vehicle-type {
+    width: 30%; /* Répartir l'espace en 3 colonnes */
+    text-align: center;
+    margin: 0; /* Réinitialiser les marges */
   }
 }
