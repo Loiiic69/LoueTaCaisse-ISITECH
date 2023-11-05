@@ -15,6 +15,7 @@ import BlogPage from './components/blog';
 import VehiclesList from './components/VehiclesList';
 import Footer from './components/footer';
 import AvisClient from './components/avisclient';
+import Admin from './components/admin';
 
 import './css/App.css';
 import Faq from './components/faq';
@@ -34,6 +35,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path='/profil' element= {<NewProfilPage/>}/>
         <Route path='/vehicleslist' element= {<VehiclesList/>}/>
+        <Route path='/admin' element= {<Admin/>}/>
         {/* Ajoutez ce Route pour AvisClient après la page d'accueil */}
         <Route path='/avisclient' element= {<AvisClient/>}/>
       </Routes>

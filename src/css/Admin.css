@@ -1,0 +1,53 @@
+/* Style pour le conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  /* Style pour la liste des options de voiture */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style pour les étiquettes de mise à jour */
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Style pour les boutons de mise à jour */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style pour le message d'accès refusé */
+  .access-denied {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
