@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // Ajout de Link
 import '../css/Home.css';
 import voitureCitadines from '../img/voiture-citadines.jpg';
 import utilitaires from '../img/utilitaires.jpg';
 import sportives from '../img/sportives.png';
 import firebase from './firebase';
+import AvisClient from './avisclient'; // Import du composant AvisClient
+import Faq from './faq';
 
 function Home() {
   const [location, setLocation] = useState('');
@@ -64,8 +66,14 @@ function Home() {
             <h2>La location SPORTIVES</h2>
             <p>Prenez vos rêves pour des réalités, louez une voiture sportive pour quelques jours ou plus.</p>
           </div>
+          <div className="avis-client-link">
+          </div>
         </div>
+        <AvisClient></AvisClient>
+        <Faq></Faq>
+
       </div>
+
     </div>
   );
 }

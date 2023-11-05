@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import firebase from './components/firebase'; // Le chemin doit être correct pour le fichier firebase.js dans src/
 import 'firebase/auth';
-import 'firebase/compat/database'
-
+import 'firebase/compat/database';
 
 import Home from './components/Home';
 import Login from './components/Login';
@@ -17,7 +16,6 @@ import VehiclesList from './components/VehiclesList';
 import Footer from './components/footer';
 import AvisClient from './components/avisclient';
 
-
 import './css/App.css';
 import Faq from './components/faq';
 
@@ -27,6 +25,7 @@ function App() {
       <header>
         <Header />
       </header>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -34,13 +33,12 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path='/profil' element= {<NewProfilPage/>}/>
-        <Route path='vehicleslist' element= {<VehiclesList/>}/>
+        <Route path='/vehicleslist' element= {<VehiclesList/>}/>
+        {/* Ajoutez ce Route pour AvisClient après la page d'accueil */}
+        <Route path='/avisclient' element= {<AvisClient/>}/>
       </Routes>
-      <AvisClient/>
-      <Faq/>
 
       <Footer/>
-
     </Router>
   );
 }

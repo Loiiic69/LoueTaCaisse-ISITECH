@@ -5,6 +5,9 @@
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  margin-top: 50px;
+
 }
 
 h2 {
@@ -64,13 +67,22 @@ select {
 }
 
 .phone-icon {
-  width: 20px;
-  height: 20px; 
+  width: 16px; /* Ajustez la largeur à la taille souhaitée */
+  height: 16px; /* Ajustez la hauteur à la taille souhaitée */
+  margin-right: 5px;
+}
+
+.email-icon {
+  width: 16px; /* Ajustez la largeur à la taille souhaitée */
+  height: 16px; /* Ajustez la hauteur à la taille souhaitée */
   margin-right: 5px;
 }
 
 .phone-number {
   font-size: 14px; 
+  color: orange;
+  text-decoration: none; /* Cela supprime le soulignement par défaut des liens */
+
 }
 
 .info {

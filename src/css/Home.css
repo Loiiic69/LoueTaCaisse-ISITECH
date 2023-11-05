@@ -151,6 +151,10 @@ button[type="submit"] {
     margin-right: 0;
   }
 }
+.avisclient {
+  background-color: #555;
+}
+
 /* Pour les écrans de grande taille */
 @media (min-width: 769px) {
   .bottom-right-rectangle {
