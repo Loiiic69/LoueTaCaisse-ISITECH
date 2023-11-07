@@ -78,7 +78,7 @@ const Admin = () => {
                 />
               </label>
               <label>
-                Nouveau prix : 
+                Nouveau prix :
                 <input
                   type="text"
                   value={newPrices[index]}

@@ -53,15 +53,16 @@ body {
   }
   
   .all-testimonials__box {
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
     width: 30rem; /* Taille du carré blanc réduite */
     padding: 1rem; /* Réduire le padding */
     position: relative;
+    margin-right: 30px;
   
-    @media (max-width: 1000px) {
-      padding: 1rem 0.5rem; /* Réduire le padding */
-    }
+   /* @media (max-width: 1000px) {
+      padding: 1rem 0.5rem; 
+    }*/
   }
   
   .all-testimonials__box p {
@@ -108,6 +109,9 @@ body {
   @media (max-width: 470px) {
     .quotes-icon {
       display: none;
+    }
+    .all-testimonials__box {
+      margin-right: 5px;
     }
   }
   
